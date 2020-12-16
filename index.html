@@ -10,22 +10,52 @@
         }
         h1{
             text-align: center;
+            border-bottom: solid gray 1px;
+            margin:0;
+            padding:15px;
         }
-        h2{
+        .nsee{
+            color:gray;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 0.5fr 2fr;
             text-align: center;
+        }
+        #grid ol{
+            border-right: gray 1px solid;
+            margin : 0;
+            padding : 35px;
+        }
+        #grid #article{
+            padding : 10px;
+        }
+        @media(max-width:1090px){
+            #grid{
+                display:block;
+                text-align: justify;
+            }
+            #grid ol{
+                border-right: none;
+            }
+            h1{
+                border-bottom: none;
+            }
         }
     </style>
 </head>
 <body>
-    <h1><a href="index.html" style="font-size: 70px;">재혁'S 홈페이지</a></h1>
-    <ol>
-        <li><a href="1.html">최근 보고 있는 Youtube 채널</a></li><br>
-        <li><a href="2.html">최근 관심을 가지고 있는 주제</a></li><br>
-        <li><a href="3.html">먹고 싶은 음식</a></li><br>
-    </ol><br>
-    <h2 style="color:red; text-decoration: underline;">INDEX</h2>
-    <p>이 홈페이지는 <strong style="text-decoration: underline; color:blueviolet; font-size: 30px;">신재혁</strong>이 본인의 웹사이트 개설 능력을 점검하면서, 자유 주제에 대해 언급하는 공간입니다.</p>
-    <p>You can get some information about jaehyeok Shin on this WEBsite.</p>
-    <image src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" width="100%">
-   
+    <h1><a href="index.html" style="font-size: 100px;">재혁'S 홈페이지</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" class="nsee">최근 보고 있는 Youtube 채널</a></li><br>
+            <li><a href="2.html" class="nsee">최근 관심을 가지고 있는 주제</a></li><br>
+            <li><a href="3.html" class="nsee">먹고 싶은 음식</a></li>
+        </ol>
+        <div id="article">
+            <p>이 홈페이지는 <strong style="text-decoration: underline; color:blueviolet; font-size: 30px;">신재혁</strong>이 본인의 웹사이트 개설 능력을 점검하면서, 자유 주제에 대해 언급하는 공간입니다.</p>
+            <image src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" width="50%">
+        </div>
+    </div>
 </body>
+</html>
